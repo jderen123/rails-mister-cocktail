@@ -1,0 +1,53 @@
+#img {
+  height: 550px;
+  width: 370px;
+  object-fit: cover;
+  box-shadow: 2px 4px #E9C5C1 ;
+  margin-bottom: 80px;
+}
+
+#cardimg {
+  object-fit: cover;
+  height: 550px;
+  width: 370px;
+
+
+
+}
+#headtxt {
+  margin-top: 10px;
+  font-size: 35px;
+  a {
+    text-decoration: none;
+  color: white;
+
+  }
+  a:hover {
+    color: #3D3D3D;
+  }
+}
+
+#banner {
+  background-image: url('https://images2.alphacoders.com/276/276920.jpg');
+    background-position: center;
+  background-size: cover;
+  opacity: .8;
+
+
+}
+.cocktail-add-path{
+ text-decoration: none;
+ color: white;
+ border: 2px ridge white;
+ padding: 10px;
+ border-radius: 20px;
+   position: absolute;
+   top: 460px;
+   right: 95px;
+
+}
+.cocktail-add-path:hover{
+    text-decoration: none;
+    color: #3D3D3D;
+    border-color:  #3D3D3D;
+   }

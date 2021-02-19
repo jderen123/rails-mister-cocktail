@@ -1,0 +1,35 @@
+<div class=" text-center" id="banner" style="margin-bottom: 0px">
+  <h1 class="display-2 " style="color: #E4E4E4; font-family: 'Dancing Script', cursive; padding-top: 100px; opacity: 1;"> Welcome to Cocktail Concoctor!</h1>
+  <p style="color: #FFFFFF; font-family: 'Architects Daughter', cursive; font-size: 24px; padding-top: 80px; opacity: 1; margin: 0 100px;">Cocktail Concocter is a database of cocktails that allows drinkers to readily find new cocktail recipes! Feel free to access our existing cocktails or add your own concoctions!</p>
+  <h1 class="display-3 " style="color: #E4E4E4; font-family: 'Dancing Script', cursive; padding-top: 80px; opacity: 1; padding-bottom: 140px; margin-bottom: 0px;"> Checkout Our amazing cocktails below!</h1>
+</div>
+<h1 class="display-1 text-center" style="font-family: 'Dancing Script'; background-color: #DDC7C4; margin-bottom: 0px; padding-bottom: 30px; padding-top: 20px;">Cocktails</h1>
+
+
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4" style="background-color: #DDC7C4; padding-left: 70px; padding-right: 70px">
+<% @cocktails.each do |cocktail|  %>
+  <div class="col" style="margin-bottom: 40px;">
+<div class="card bg-dark text-white m-3 d-flex" id="img">
+  <img src="https://source.unsplash.com/random" class="card-img" alt="..." id="cardimg">
+  <div class="card-img-overlay">
+   <h5 id= "headtxt" class= "card-title text-center"><%= link_to cocktail.name, cocktail_path(cocktail), class: "" %></h5>
+   <%= link_to "Add Ingredients", cocktail_path(cocktail), class: "cocktail-add-path" %>
+  </div>
+</div>
+</div>
+
+
+<% end  %>
+ </div>
+
+
+
+
+
+
+
+
+
+

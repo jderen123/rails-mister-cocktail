@@ -1,0 +1,25 @@
+body {
+  background-size: cover;
+  background-image: url("https://images2.alphacoders.com/134/134862.jpg");
+}
+
+#formholder{
+  width: 40%;
+}
+
+.centerinput {
+ margin-left: 50px;
+ color: white;
+}
+
+.subbtn {
+border-radius: 20px;
+color: white;
+border-color: white;
+margin-top: 20px;
+}
+.subbtn:hover {
+  color: #939393;
+    border-color:  #3D3D3D;
+}
+

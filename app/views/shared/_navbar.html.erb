@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #D9534E; font-family: 'Dancing Script'; font-size: 26px;">
+  <div class="container-fluid">
+    <img src="https://ci5.googleusercontent.com/proxy/0bCCVHsa1oDDxTCZVhF2WoMUhvmc8mHZ3bWZ4_82WCQfyNBMEVoA8r0LdEJ6-xVDas8-qjZ2mfM9Qwz2h_C4LrqKoKbgR3sZoD9CCwAi0qhzSS66kYl22VD6Q7NL4pWToJ0RRAU0wvCcNCwPfFRAgWk5s-d4b3nJ=s0-d-e1-ft#https://www.freelogodesign.org/file/app/client/thumb/86b90b1a-3348-43c5-8992-9aa65938dc80_200x200.png" style="height:75px; width:75px; margin-left: 2px; margin-right: 25px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to "Home", cocktails_path, class: "nav-link active", style: "color: #F9E02B; font-size: 32px;" %>
+        </li>
+        <li class="nav-item " id="add-cocktail" >
+          <%= link_to new_cocktail_path, class: "nav-link text-center", style: "color: #F9E02B; width: 200px; border: 1px solid; border-radius: 50px; margin-left: 400px;"  do %>
+          <i class="fa fa-plus" style="color: #F9E02B"  ></i> Add Cocktail
+          <% end  %>
+        </li>
+        <li class="nav-item dropdown" style="">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style= "color: #F9E02B; margin-left: 200px; margin-right: 40px" >
+            Cocktails
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex" style="">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>

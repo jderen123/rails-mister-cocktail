@@ -1,0 +1,15 @@
+<div class="container" style="color:white;" id="main">
+
+
+<h1 class="display-4 text-center" style="color: white; margin-top: 125px;margin-bottom: 50px; font-family: 'Dancing Script', cursive;">Create a new Cocktail</h1>
+
+<%= simple_form_for @cocktail do |f| %>
+<div id="formholder" class="container text-center">
+  <%= f.input :name,  label: "Cocktail Name", :class => "centerinput", style: "color: white" %>
+  <%= f.button :submit, :class => "subbtn" %>
+
+  <% end %>
+
+</div>
+
+</div>

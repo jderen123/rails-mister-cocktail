@@ -10,3 +10,15 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+.navbar-light .navbar-nav .nav-link.add-cocktail-btn{
+color: #F9E02B;
+width: 200px;
+border: 1px solid;
+border-radius: 50px;
+margin-left: 400px;
+&:hover{
+  color: black;
+  background-color: #F9E02B;
+
+}
+}

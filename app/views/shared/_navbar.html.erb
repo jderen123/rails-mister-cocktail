@@ -9,12 +9,12 @@
         <li class="nav-item">
           <%= link_to "Home", cocktails_path, class: "nav-link active", style: "color: #F9E02B; font-size: 32px;" %>
         </li>
-        <li class="nav-item " id="add-cocktail" >
-          <%= link_to new_cocktail_path, class: "nav-link text-center", style: "color: #F9E02B; width: 200px; border: 1px solid; border-radius: 50px; margin-left: 400px;"  do %>
-          <i class="fa fa-plus" style="color: #F9E02B"  ></i> Add Cocktail
+        <li class="nav-item " >
+          <%= link_to new_cocktail_path, class: "nav-link text-center add-cocktail-btn" do %>
+          <i class="fa fa-plus" ></i> Add Cocktail
           <% end  %>
         </li>
-        <li class="nav-item dropdown" style="">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style= "color: #F9E02B; margin-left: 200px; margin-right: 40px" >
             Cocktails
           </a>

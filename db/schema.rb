@@ -33,10 +33,13 @@ ActiveRecord::Schema.define(version: 2021_02_18_145407) do
 
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
+    t.bigint "cocktail_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["cocktail_id"], name: "index_ingredients_on_cocktail_id"
   end
 
   add_foreign_key "doses", "cocktails"
   add_foreign_key "doses", "ingredients"
+  add_foreign_key "ingredients", "cocktails"
 end

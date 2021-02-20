@@ -18,8 +18,4 @@ puts "Ingredients are seeded"
 puts "Finished"
 
 
-10.times do
-  Cocktail.create(
-    name: Faker::Beer.name
-  )
-end
+

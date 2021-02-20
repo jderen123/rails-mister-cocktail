@@ -11,8 +11,8 @@
 <div class="row row-cols-1 row-cols-md-3 g-4" style="background-color: #DDC7C4; padding-left: 70px; padding-right: 70px">
 <% @cocktails.each do |cocktail|  %>
   <div class="col" style="margin-bottom: 40px; ">
-    <div class="card bg-dark text-white m-3 d-flex card-cocktail">
-      <img src="https://source.unsplash.com/random" class="card-img" alt="..." id="cardimg">
+    <div class="card bg-dark text-white m-3 d-flex card-cocktail" >
+      <%= cl_image_tag cocktail.photo.key, class: "cardimg" %>
         <div class="card-img-overlay">
           <h5 id= "headtxt" class= "card-title text-center"><%= link_to cocktail.name, cocktail_path(cocktail), style: "font-family: 'Dancing Script', cursive" %></h5>
    <%= link_to "Add Ingredients", cocktail_path(cocktail), class: "cocktail-add-path" %>

@@ -3,7 +3,7 @@ module CocktailsHelper
     if cocktail.photo.attached?
     cl_image_path(cocktail.photo.key)
   else
-    asset_path('cocktail_default.png')
+    cl_image_path('cdelish-halloween-cocktails-risen-from-grave_yl6q0v.png')
   end
 end
 end

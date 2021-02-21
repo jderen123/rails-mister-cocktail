@@ -3,7 +3,7 @@ module CocktailsHelper
     if cocktail.photo.attached?
     cl_image_path(cocktail.photo.key)
   else
-    cl_image_path('cdelish-halloween-cocktails-risen-from-grave_yl6q0v.png')
+    cl_image_tag('hqeon9m03r0tvq6cl84uc41qezvq')
   end
 end
 end

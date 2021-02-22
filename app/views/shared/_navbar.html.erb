@@ -27,10 +27,14 @@
         </li>
 
       </ul>
-      <form class="d-flex" style="">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-warning" type="submit">Search</button>
+     <%= form_tag cocktails_path, :method => 'get', :class => "d-flex" do  %>
+      <%= text_field_tag :search, params[:search], :class => "form-control me-2" %>
+      <%= submit_tag "Search", :class => "btn btn-outline-warning" %>
+      <% end %>
       </form>
     </div>
   </div>
 </nav>
+
+
+
